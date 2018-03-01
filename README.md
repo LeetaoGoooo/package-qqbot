@@ -14,6 +14,12 @@
 
 python3.6
 
+## 体验
+
+可以加群体验,群里机器人不闲聊
+
+![](http://ww1.sinaimg.cn/large/006wYWbGly1fox1k705coj306a082wen.jpg)
+
 ## 运行
 
 ```bash
