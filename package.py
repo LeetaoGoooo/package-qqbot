@@ -1,12 +1,14 @@
 import os
 import re
 import requests
+from chat import Tuling
 
 class Package(object):
-    __slots__ = ['_record']
+    __slots__ = ['_record','_chat']
 
     def __init__(self):
         self._record = Record()
+        self._chat = Tuling()
 
     def handle_message_str(self, member, message_str):
         """
@@ -33,7 +35,7 @@ class Package(object):
                     return self.get_max_package(message_str,url)
                 return "请分享红包链接!"
         except Exception as e:
-            return "请分享红包链接"
+            return self._chat.response(member,message_str)
 
     
     def check_phone_number_format(self,phone):
@@ -50,7 +52,7 @@ class Package(object):
 
     def get_max_package(self,phone,url):
         data = {"url":url,"mobile":phone}
-        res = requests.post('http://101.132.113.122:3007/hongbao',data=data)
+        res = requests.post('https://hongbao.xxooweb.com/hongbao',data=data)
         response_json = res.json()
         print(response_json)
         return response_json['message']

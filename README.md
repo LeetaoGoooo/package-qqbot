@@ -10,17 +10,16 @@
 
 ![](http://ww1.sinaimg.cn/large/006wYWbGly1fowkc0crx3j30bh0cswf3.jpg)
 
+3. 添加聊天机器人
+
 ## 环境
 
 python3.6
 
-## 体验
-
-可以加群体验,群里机器人不闲聊
-
-![](http://ww1.sinaimg.cn/large/006wYWbGly1fox1k705coj306a082wen.jpg)
 
 ## 运行
+
+修改<code>chat.py</code>中的<code>apiKey</code>[可选]
 
 ```bash
 pip install -r requirements.txt
