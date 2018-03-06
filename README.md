@@ -21,7 +21,7 @@
 
 ## 说明
 
-由于 smartqq 协议的限制，每次登录成功后的 cookie 会每在 1 ~ 2 天后失效，将被腾讯服务器强制下线，此时 必须 手工扫码重新登录，因此无法稳定的长期保持在线,详细说明[如何稳定的长期保持在线](https://github.com/pandolia/qqbot/blob/master/faq.md#%E5%A6%82%E4%BD%95%E7%A8%B3%E5%AE%9A%E7%9A%84%E9%95%BF%E6%9C%9F%E4%BF%9D%E6%8C%81%E5%9C%A8%E7%BA%BF)
+由于 smartqq 协议的限制，每次登录成功后的 cookie 会每在 1 ~ 2 天后失效，将被腾讯服务器强制下线，此时<b>必须</b>手工扫码重新登录，因此无法稳定的长期保持在线,详细说明[如何稳定的长期保持在线](https://github.com/pandolia/qqbot/blob/master/faq.md#%E5%A6%82%E4%BD%95%E7%A8%B3%E5%AE%9A%E7%9A%84%E9%95%BF%E6%9C%9F%E4%BF%9D%E6%8C%81%E5%9C%A8%E7%BA%BF)
 
 ## 环境
 
