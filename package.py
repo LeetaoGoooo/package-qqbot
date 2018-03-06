@@ -10,14 +10,14 @@ class Package(object):
         self._record = Record()
         self._chat = Tuling()
 
-    def handle_message_str(self, member, message_str):
+    def handle_message_str(self, member, message_str,enabled_chat=False):
         """
         :param message_str:
         :return:
         """
         try:
             # judge if share url or get package
-            if message_str[:5] == 'https':
+            if message_str[:5] == 'ehttps':
                 if message_str.find("https://activity.waimai.meituan.com/") != -1 or message_str.find("https://h5.ele.me/hongbao/") != -1:
                     self._record.record(member,message_str)
                     return "请输入手机号码:"
@@ -35,7 +35,9 @@ class Package(object):
                     return self.get_max_package(message_str,url)
                 return "请分享红包链接!"
         except Exception as e:
-            return self._chat.response(member,message_str)
+            if enabled_chat:
+                return self._chat.response(member,message_str)
+            return "未启动聊天功能,请分享红包链接"
 
     
     def check_phone_number_format(self,phone):
