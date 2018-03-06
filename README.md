@@ -16,8 +16,8 @@
 
 默认情况下关闭聊天功能,启用聊天:
 
-修改<code>core.py</code>中<code>user_package.handle_message_str(member.name,content)</code>为
-<code>user_package.handle_message_str(member.name,content,True)</code>
+修改<code>core.py</code>中<code>user_package.handle_message_str(xxx,content)</code>为
+<code>user_package.handle_message_str(xxx,content,True)</code>
 
 ## 环境
 
